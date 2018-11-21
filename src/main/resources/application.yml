@@ -1,0 +1,20 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: springboot
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.72.128:3306/mytest?useUnicode=true&useSSL=false
+    username: root
+    password: harryleng
+  redis:
+    port: 6379
+    host: 192.168.72.128
+    password: harryleng
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+mybatis:
+  type-aliases-package: com.example.springboot.po
+  mapper-locations: classpath:mapper/*.xml
