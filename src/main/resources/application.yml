@@ -5,20 +5,26 @@ spring:
     name: springboot
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.3.130:3306/mytest?useUnicode=true&useSSL=false
+    url: jdbc:mysql://114.116.88.59:3306/loobool?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = UTC
     username: root
-    password: 111111
+    password: 111111aa
   rabbitmq:
-    host: 192.168.3.130
+    host: 114.116.88.59
     port: 5672
     username: root
     password: root
     virtual-host: /
-#    publisher-confirms: true
-#  redis:
-#    port: 6379
-#    host: 192.168.72.128
-#    password: harryleng
+  redis:
+    database: 0
+    host: 114.116.88.59
+    port: 6379
+    timeout: 2000
+    password: 111111
+  #    publisher-confirms: true
+  #  redis:
+  #    port: 6379
+  #    host: 192.168.72.128
+  #    password: harryleng
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

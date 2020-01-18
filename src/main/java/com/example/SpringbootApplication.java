@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 
+/**
+ * @author harryleng
+ */
 @SpringBootApplication
 @MapperScan ("com.example.springboot.dao")
 public class SpringbootApplication
