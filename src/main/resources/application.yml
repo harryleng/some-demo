@@ -8,12 +8,12 @@ spring:
     url: jdbc:mysql://114.116.88.59:3306/loobool?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone = UTC
     username: root
     password: 111111aa
-  rabbitmq:
-    host: 114.116.88.59
-    port: 5672
-    username: root
-    password: root
-    virtual-host: /
+#  rabbitmq:
+#    host: 114.116.88.59
+#    port: 5672
+#    username: root
+#    password: root
+#    virtual-host: /
   redis:
     database: 0
     host: 114.116.88.59
